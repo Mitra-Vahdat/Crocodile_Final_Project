@@ -7,7 +7,10 @@ The repository contains **project planning & UI design files on "plan" branch**,
 ## What is it about?
 We were working on a localized developing community for resident developers in IRI, so they don't have to deal with the difficulty of networking through English based platforms. 
 
-* **Dev-Hive** is here to make everything easier, from debugging for developers or finding senior/professional human recourses for companies/startups/businesses! 
+* **Dev-Hive** is here to make everything easier, from debugging for developers to finding senior/professional human recourses for companies/startups/businesses!
+
+
+  Note: This project is front-end developed only
  
 
 
@@ -32,4 +35,4 @@ Note that we used camel-case naming system! ex:
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)#  Crocodile's Final Project
+[MIT](https://choosealicense.com/licenses/mit/)
