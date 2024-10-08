@@ -1,0 +1,79 @@
+body {
+  direction: rtl;
+  font-family: yekan bakh;
+  background-image: linear-gradient(45deg, #303030, #1a1a1a);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+body header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2%;
+}
+body header .logo {
+  width: 8%;
+  display: flex;
+  align-items: center;
+}
+body header .logo img {
+  width: 100%;
+}
+body header nav {
+  width: 50%;
+  opacity: 80%;
+  background-color: rgba(233, 237, 242, 0.9);
+  border-radius: 40px;
+  filter: drop-shadow(0px 0px 13px #000000);
+}
+body header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+body header nav ul a {
+  color: black;
+  text-decoration: none;
+}
+body header nav ul a li {
+  list-style-type: none;
+}
+body header nav ul a:hover {
+  color: #93278f;
+  border-bottom: 1px solid #93278f;
+}
+body header .signUpLogin {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 10%;
+  padding: 4px;
+  background-color: rgba(233, 237, 242, 0.9);
+  border-radius: 40px;
+  filter: drop-shadow(0px 0px 13px #000000);
+}
+body header .signUpLogin a {
+  color: black;
+  text-decoration: none;
+}
+body header .signUpLogin a:first-of-type {
+  background-image: linear-gradient(to left, #cd54be, #93278f);
+  color: white;
+  border-radius: 40px 10px 10px 40px;
+  padding: 10px;
+  background-image: none;
+  background-color: white;
+  color: #93278f;
+  border-radius: 10px 40px 40px 10px;
+}
+body header .signUpLogin a:last-of-type {
+  background-image: linear-gradient(to left, #cd54be, #93278f);
+  color: white;
+  border-radius: 40px 10px 10px 40px;
+  padding: 10px;
+}
+body header .signUpLogin a:hover {
+  color: #93278f;
+  border-bottom: 1px solid #93278f;
+}
+
+/*# sourceMappingURL=style.css.map */

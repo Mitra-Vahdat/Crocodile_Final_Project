@@ -1,0 +1,84 @@
+@mixin links {
+  color: black;
+  text-decoration: none;
+}
+@mixin links-hover {
+  color: #93278f;
+  border-bottom: 1px solid #93278f;
+}
+@mixin div-background-style {
+  background-color: rgba(233, 237, 242, 0.9);
+  border-radius: 40px;
+  //   box-shadow: 0 0 10px #cbd5e4;
+  filter: drop-shadow(0px 0px 13px #000000);
+}
+@mixin signUpLoginButton {
+  background-image: linear-gradient(to left, #cd54be, #93278f);
+  color: white;
+  border-radius: 40px 10px 10px 40px;
+  padding: 10px;
+}
+// *********page style*************
+body {
+  direction: rtl;
+  font-family: yekan bakh;
+  background-image: linear-gradient(45deg, #303030, #1a1a1a);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2%;
+    .logo {
+      width: 8%;
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    nav {
+      width: 50%;
+      opacity: 80%;
+      @include div-background-style;
+      ul {
+        display: flex;
+        justify-content: space-evenly;
+        a {
+          @include links;
+          li {
+            list-style-type: none;
+          }
+          &:hover {
+            @include links-hover;
+          }
+        }
+      }
+    }
+    .signUpLogin {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 10%;
+      padding: 4px;
+      @include div-background-style;
+      a {
+        @include links;
+        &:first-of-type {
+          @include signUpLoginButton;
+          background-image: none;
+          background-color: white;
+          color: #93278f;
+          border-radius: 10px 40px 40px 10px;
+        }
+        &:last-of-type {
+          @include signUpLoginButton;
+        }
+        &:hover {
+          @include links-hover;
+        }
+      }
+    }
+  }
+}
