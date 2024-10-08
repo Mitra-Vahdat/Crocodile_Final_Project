@@ -2,60 +2,78 @@
   color: black;
   text-decoration: none;
 }
+
 @mixin links-hover {
-  color: #93278f;
-  border-bottom: 1px solid #93278f;
+  color: #058022;
 }
+
 @mixin div-background-style {
-  background-color: rgba(233, 237, 242, 0.9);
+  background-color: #242424;
   border-radius: 40px;
-  //   box-shadow: 0 0 10px #cbd5e4;
   filter: drop-shadow(0px 0px 13px #000000);
 }
+
 @mixin signUpLoginButton {
-  background-image: linear-gradient(to left, #cd54be, #93278f);
+  background-image: linear-gradient(to left, #058022, #058022);
   color: white;
   border-radius: 40px 10px 10px 40px;
   padding: 10px;
+  text-align: center;
 }
+
 // *********page style*************
 body {
   direction: rtl;
-  font-family: yekan bakh;
-  background-image: linear-gradient(45deg, #303030, #1a1a1a);
+  font-family: vazirmatn;
+  // background-image: linear-gradient(45deg, #303030, #1a1a1a);
+  background-color: #030303;
   background-repeat: repeat;
   background-attachment: fixed;
+  padding: 0 10%;
+
   header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 2%;
+
+
     .logo {
       width: 8%;
       display: flex;
       align-items: center;
+
       img {
         width: 100%;
       }
     }
+
     nav {
       width: 50%;
       opacity: 80%;
       @include div-background-style;
+
       ul {
+        width: 100%;
         display: flex;
         justify-content: space-evenly;
+        padding-inline-start: 0;
+
         a {
           @include links;
+
           li {
             list-style-type: none;
+            color: #9f9f9f;
           }
+
           &:hover {
             @include links-hover;
           }
         }
       }
     }
+
     .signUpLogin {
       display: flex;
       align-items: center;
@@ -63,20 +81,183 @@ body {
       width: 10%;
       padding: 4px;
       @include div-background-style;
+
       a {
         @include links;
+
         &:first-of-type {
           @include signUpLoginButton;
-          background-image: none;
-          background-color: white;
-          color: #93278f;
           border-radius: 10px 40px 40px 10px;
+          width: 60%;
+
+          &:hover {
+            color: black;
+          }
         }
+
         &:last-of-type {
+          width: 40%;
           @include signUpLoginButton;
+          background-image: none;
+          background-color: #262525;
+          color: #058022;
         }
+
         &:hover {
-          @include links-hover;
+          color: #058022;
+
+        }
+      }
+    }
+  }
+
+  main {
+    .firstSection {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+
+      .right-side {
+        width: 60%;
+
+        p {
+          font-size: 120px;
+          color: #087820;
+          font-weight: bold;
+        }
+      }
+
+      .left-side {
+        width: 40%;
+
+        p {
+          color: #6E6D6D;
+          font-size: 25px;
+
+          span {
+            color: #087820;
+          }
+        }
+      }
+    }
+
+    div {
+      #clock {
+        margin: 20px auto;
+        padding: 0;
+        background: #333;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+        font-size: 34px;
+        font-family: calibri;
+      }
+    }
+  }
+
+  .slider {
+    .site-footer-marquee {
+      --item-count: 8;
+      --item-speed: 4s;
+      --grid-gap: 24px;
+      position: relative;
+      z-index: 2;
+      margin: 0 auto;
+      padding-top: 60px;
+      padding-inline: 24px;
+      overflow: hidden;
+      overflow-x: hidden;
+
+
+      .site-footer-marquee__track {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        animation: footer-marquee-mobile-wiggle 1.8s alternate-reverse infinite ease-in-out;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        font-size: 100%;
+        vertical-align: baseline;
+        animation: slide 90s linear infinite;
+        display: flex;
+
+        @keyframes slide {
+          0% {
+            transform: translateX(0);
+          }
+
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+
+        .site-footer-marquee__grid {
+          display: grid;
+          grid-auto-columns: -webkit-min-content;
+          grid-auto-columns: min-content;
+          grid-auto-flow: column;
+          width: -webkit-fit-content;
+          width: -moz-fit-content;
+          width: fit-content;
+          display: flex;
+          -webkit-transform: translateX(var(--grid-x-offset, 0));
+          -ms-transform: translateX(var(--grid-x-offset, 0));
+          transform: translateX(var(--grid-x-offset, 0));
+          -webkit-transition: -webkit-transform 0.6s ease-out;
+          transition: -webkit-transform 0.6s ease-out;
+          transition: transform 0.6s ease-out;
+          transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
+          gap: var(--grid-gap);
+
+        }
+
+        .site-footer a,
+        .site-footer a:visited,
+        .site-footer a:active {
+          color: inherit;
+          text-decoration: none;
+        }
+
+        .site-footer-marquee-item {
+          --item-media-width: 200px;
+          --item-media-height: 150px;
+          position: relative;
+          -webkit-transform: perspective(300px) translate3d(0, 0, 0);
+          transform: perspective(300px) translate3d(0, 0, 0);
+          color: #fff;
+
+          .site-footer-marquee-item__stack {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: var(--item-media-width);
+            height: var(--item-media-height);
+          }
+
+          .site-footer-marquee-item__media {
+            display: -ms-flexbox;
+            display: flex;
+            position: relative;
+            z-index: 1;
+            width: var(--item-media-width);
+            height: var(--item-media-height);
+            overflow: hidden;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            background-color: #9e9ea7;
+          }
+
+          .site-footer-marquee-item__title {
+            margin-top: 12px;
+            color: #0d0c22;
+            font-size: 14px;
+            font-weight: 500;
+          }
         }
       }
     }
