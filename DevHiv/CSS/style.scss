@@ -14,7 +14,7 @@
 }
 
 @mixin signUpLoginButton {
-  background-image: linear-gradient(to left,#058022, #044d15 );
+  background-image: linear-gradient(to left, #058022, #044d15);
 
   color: white;
   border-radius: 40px 10px 10px 40px;
@@ -100,8 +100,8 @@ body {
           width: 40%;
           @include signUpLoginButton;
           background-image: none;
-          background-color: #545454;
-          color: #058022;
+          background-color: #303030;
+          color: #929292;
         }
 
         &:hover {

@@ -79,8 +79,8 @@ body header .signUpLogin a:last-of-type {
   padding: 10px;
   text-align: center;
   background-image: none;
-  background-color: #545454;
-  color: #058022;
+  background-color: #303030;
+  color: #929292;
 }
 body header .signUpLogin a:hover {
   color: #058022;
