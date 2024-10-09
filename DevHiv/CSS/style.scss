@@ -2,81 +2,110 @@
   color: black;
   text-decoration: none;
 }
+
 @mixin links-hover {
-  color: #93278f;
-  border-bottom: 1px solid #93278f;
+  color: #058022;
 }
+
 @mixin div-background-style {
-  background-color: rgba(233, 237, 242, 0.9);
+  background-color: #242424;
   border-radius: 40px;
-  //   box-shadow: 0 0 10px #cbd5e4;
   filter: drop-shadow(0px 0px 13px #000000);
 }
+
 @mixin signUpLoginButton {
-  background-image: linear-gradient(to left, #cd54be, #93278f);
+  background-image: linear-gradient(to left, #058022, #044d15);
+
   color: white;
   border-radius: 40px 10px 10px 40px;
   padding: 10px;
+  text-align: center;
 }
+
 // *********page style*************
 body {
   direction: rtl;
-  font-family: yekan bakh;
-  background-image: linear-gradient(45deg, #303030, #1a1a1a);
+  font-family: vazirmatn;
+  // background-image: linear-gradient(45deg, #303030, #1a1a1a);
+  background-color: #030303;
   background-repeat: repeat;
   background-attachment: fixed;
+  padding: 0 10%;
+
   header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 2%;
+
     .logo {
-      width: 8%;
+      width: 65px;
       display: flex;
       align-items: center;
+
       img {
         width: 100%;
       }
     }
+
     nav {
       width: 50%;
       opacity: 80%;
       @include div-background-style;
+
       ul {
+        width: 100%;
         display: flex;
         justify-content: space-evenly;
+        padding-inline-start: 0;
+
         a {
           @include links;
+
           li {
             list-style-type: none;
+            color: #9f9f9f;
           }
+
           &:hover {
             @include links-hover;
           }
         }
       }
     }
+
     .signUpLogin {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      width: 10%;
-      padding: 4px;
+      width: 15%;
+      padding: 6px;
+      gap: 3%;
       @include div-background-style;
+
       a {
         @include links;
+
         &:first-of-type {
           @include signUpLoginButton;
-          background-image: none;
-          background-color: white;
-          color: #93278f;
           border-radius: 10px 40px 40px 10px;
+          width: 60%;
+
+          &:hover {
+            color: black;
+          }
         }
+
         &:last-of-type {
+          width: 40%;
           @include signUpLoginButton;
+          background-image: none;
+          background-color: #303030;
+          color: #929292;
         }
+
         &:hover {
-          @include links-hover;
+          color: #058022;
         }
       }
     }

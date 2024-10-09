@@ -1,9 +1,10 @@
 body {
   direction: rtl;
-  font-family: yekan bakh;
-  background-image: linear-gradient(45deg, #303030, #1a1a1a);
+  font-family: vazirmatn;
+  background-color: #030303;
   background-repeat: repeat;
   background-attachment: fixed;
+  padding: 0 10%;
 }
 body header {
   display: flex;
@@ -12,7 +13,7 @@ body header {
   padding-top: 2%;
 }
 body header .logo {
-  width: 8%;
+  width: 65px;
   display: flex;
   align-items: center;
 }
@@ -22,13 +23,15 @@ body header .logo img {
 body header nav {
   width: 50%;
   opacity: 80%;
-  background-color: rgba(233, 237, 242, 0.9);
+  background-color: #242424;
   border-radius: 40px;
   filter: drop-shadow(0px 0px 13px #000000);
 }
 body header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
+  padding-inline-start: 0;
 }
 body header nav ul a {
   color: black;
@@ -36,18 +39,19 @@ body header nav ul a {
 }
 body header nav ul a li {
   list-style-type: none;
+  color: #9f9f9f;
 }
 body header nav ul a:hover {
-  color: #93278f;
-  border-bottom: 1px solid #93278f;
+  color: #058022;
 }
 body header .signUpLogin {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 10%;
-  padding: 4px;
-  background-color: rgba(233, 237, 242, 0.9);
+  width: 15%;
+  padding: 6px;
+  gap: 3%;
+  background-color: #242424;
   border-radius: 40px;
   filter: drop-shadow(0px 0px 13px #000000);
 }
@@ -56,24 +60,30 @@ body header .signUpLogin a {
   text-decoration: none;
 }
 body header .signUpLogin a:first-of-type {
-  background-image: linear-gradient(to left, #cd54be, #93278f);
+  background-image: linear-gradient(to left, #058022, #044d15);
   color: white;
   border-radius: 40px 10px 10px 40px;
   padding: 10px;
-  background-image: none;
-  background-color: white;
-  color: #93278f;
+  text-align: center;
   border-radius: 10px 40px 40px 10px;
+  width: 60%;
+}
+body header .signUpLogin a:first-of-type:hover {
+  color: black;
 }
 body header .signUpLogin a:last-of-type {
-  background-image: linear-gradient(to left, #cd54be, #93278f);
+  width: 40%;
+  background-image: linear-gradient(to left, #058022, #044d15);
   color: white;
   border-radius: 40px 10px 10px 40px;
   padding: 10px;
+  text-align: center;
+  background-image: none;
+  background-color: #303030;
+  color: #929292;
 }
 body header .signUpLogin a:hover {
-  color: #93278f;
-  border-bottom: 1px solid #93278f;
+  color: #058022;
 }
 
 /*# sourceMappingURL=style.css.map */
