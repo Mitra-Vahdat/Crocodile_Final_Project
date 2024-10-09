@@ -120,6 +120,7 @@ main .slider {
 main .slider .slider-wrapper {
   display: flex;
   animation: slide 10s linear infinite;
+  width: 600px;
 }
 main .slider .slider-wrapper img {
   width: 300px;
@@ -130,7 +131,7 @@ main .slider .slider-wrapper img {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%); /* حرکت به سمت چپ */
+    transform: translateX(-300px); /* حرکت به سمت چپ */
   }
 }
 main div #clock {

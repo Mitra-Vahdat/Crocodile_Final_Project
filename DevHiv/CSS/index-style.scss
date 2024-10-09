@@ -143,6 +143,7 @@ main {
     .slider-wrapper {
       display: flex;
       animation: slide 10s linear infinite;
+      width: calc(300px * 2);
       img {
         width: 300px;
         height: auto;
@@ -154,7 +155,7 @@ main {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%); /* حرکت به سمت چپ */
+      transform: translateX(-300px); /* حرکت به سمت چپ */
     }
   }
 
