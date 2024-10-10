@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevHiv</title>
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/index-style.css" />
-    <link rel="stylesheet" href="CSS/font-yekanBakh.css" />
-    <link rel="stylesheet" href="CSS/Vazirmatn-font-face.css" />
+    <link rel="stylesheet" href="CSS/style/style.css" />
+    <link rel="stylesheet" href="CSS/indexStyle/index-style.css" />
+    <link rel="stylesheet" href="CSS/fontsStyle/Vazirmatn-font-face.css" />
   </head>
 
   <body>
     <header>
       <div class="logo">
-        <img src="Assests/Kandoo/imgaes/icon/main-icon.png" alt="" />
+        <img src="Assests/imgaes/icon/main-icon.png" alt="" />
       </div>
       <nav>
         <ul>
@@ -38,7 +37,7 @@
         </ul>
       </nav>
       <div class="signUpLogin">
-        <a href="">ثبت نام</a>
+        <a href="signUp.html">ثبت نام</a>
         <a href="">ورود</a>
       </div>
     </header>
@@ -77,18 +76,27 @@
             <p>
               از مشارکت در تالارهای گفتگو و کــدهای دی‌بـاگ شـــده، پروژه‌ها و
               تجارب‌کاری تــــا کارفرماها و زنبورهای دیگه‌ای که با اون‌هــا از
-              طریق کندو ارتباط گرفتید، همه در پروفایل کاربریشما نمایش داده میشن
+              طریق کندو ارتباط گرفتید، همه در پروفایل کاربری شما نمایش داده میشن
               تا یک رزومه پویا و آنلاین داشته باشید.
             </p>
           </div>
           <div class="smaller">
             <p>از حرفه ای ها کمک بگیر!</p>
+            <div class="boxPicture">
+              <img src="Assests/imgaes/networking-icon.png" alt="" />
+            </div>
           </div>
           <div class="smaller">
             <p>دیگه نگران شبکه سازی نباش!</p>
           </div>
           <div class="bigger">
             <p>وقت طلاست!</p>
+            <div class="clock">
+              <span id="hours">14</span>:<span id="minutes">30</span>:<span
+                id="seconds"
+                >45</span
+              >:<span id="milliseconds">123</span>
+            </div>
           </div>
         </div>
       </section>
@@ -104,16 +112,17 @@
       <section class="slider">
         <div class="slider">
           <div class="slider-wrapper">
-            <img src="https://via.placeholder.com/300" alt="Image 1" />
-            <img src="https://via.placeholder.com/300" alt="Image 2" />
-            <img src="https://via.placeholder.com/300" alt="Image 3" />
-            <img src="https://via.placeholder.com/300" alt="Image 4" />
-            <img src="https://via.placeholder.com/300" alt="Image 5" />
-            <img src="https://via.placeholder.com/300" alt="Image 1" />
-            <img src="https://via.placeholder.com/300" alt="Image 2" />
-            <img src="https://via.placeholder.com/300" alt="Image 3" />
-            <img src="https://via.placeholder.com/300" alt="Image 4" />
-            <img src="https://via.placeholder.com/300" alt="Image 5" />
+            <img src="Assests/imgaes/icon/resume-icon.png" alt="Image 1" />
+            <img src="Assests/imgaes/icon/resume-icon.png" alt="Image 1" />
+            <img src="Assests/imgaes/icon/resume-icon.png" alt="Image 1" />
+            <img src="Assests/imgaes/icon/resume-icon.png" alt="Image 1" />
+            <img src="Assests/imgaes/icon/resume-icon.png" alt="Image 1" />
+            <img src="Assests/imgaes/icon/resume-icon.png" alt="Image 1" />
+            <img src="Assests/imgaes/icon/resume-icon.png" alt="Image 1" />
+            <img src="Assests/imgaes/icon/resume-icon.png" alt="Image 1" />
+            <img src="Assests/imgaes/icon/resume-icon.png" alt="Image 1" />
+            <img src="Assests/imgaes/icon/resume-icon.png" alt="Image 1" />
+            <img src="Assests/imgaes/icon/resume-icon.png" alt="Image 1" />
           </div>
         </div>
       </section>
@@ -123,38 +132,55 @@
           <div class="cards">
             <div class="card">
               <div>
-                <img src="" alt="" />
+                <img src="Assests/imgaes/icon/ex.png" alt="" />
                 <p>پروفایل کاربری پویا</p>
               </div>
               <div>
-                <p></p>
+                <p>
+                  ثبت تمامی فعالیت‌های شما به صورت لحظه‌ای؛ از ثبت دستی
+                  مهارت‌های شما تا مشارکت در پروژه‌ها و کدهای دیگران. درست مثل
+                  یک رزومه آنلاین!
+                </p>
               </div>
             </div>
             <div class="card">
               <div>
-                <img src="" alt="" />
+                <img src="Assests/imgaes/icon/ex.png" alt="" />
+
                 <p>مسابقات دوره‌ای</p>
               </div>
               <div>
-                <p></p>
+                <p>
+                  کندو هر از چندگاهی مسابقاتی در زمینه برنامه‌نویسی و توسعه
+                  نرم‌افزار برگزار میکنه، که میتونید با شرکت در اون‌ها خودتون رو
+                  محک بزنید و جایزه هم ببرید.
+                </p>
               </div>
             </div>
             <div class="card">
               <div>
-                <img src="" alt="" />
+                <img src="Assests/imgaes/icon/ex.png" alt="" />
+
                 <p>تالارهای گفتگو</p>
               </div>
               <div>
-                <p></p>
+                <p>
+                  امکان مشارکت در پروژه‌های گوناگون با عضویت در تالارهای گفتگو
+                  مربوط به حوزه کاری شما.
+                </p>
               </div>
             </div>
             <div class="card">
               <div>
-                <img src="" alt="" />
+                <img src="Assests/imgaes/icon/ex.png" alt="" />
+
                 <p>آموزش و یادگیری</p>
               </div>
               <div>
-                <p></p>
+                <p>
+                  شما میتونید در قالب مقاله، ویدئو یا عکس، در بخش مربوط به آموزش
+                  سایت فعالیت داشته باشید، و از آفرهای ویژه بهره‌مند بشید.
+                </p>
               </div>
             </div>
           </div>
