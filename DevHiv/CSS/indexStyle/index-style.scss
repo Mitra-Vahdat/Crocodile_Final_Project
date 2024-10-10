@@ -100,12 +100,24 @@ main {
         @include box-style;
         &:first-of-type {
           margin-left: 10px;
+          .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            span {
+              width: 65%;
+            }
+            img {
+              width: 30%;
+            }
+          }
         }
         .clock {
           text-align: center;
           color: #05801f;
           font-family: Digital Numbers;
-          font-size: clamp(20px, 4vw, 100px);
+          font-size: clamp(10px, 4vw, 100px);
+          margin-top: 20%;
         }
       }
 
@@ -116,8 +128,10 @@ main {
         margin-left: 10px;
 
         .boxPicture {
+          display: flex;
+          justify-content: center;
           img {
-            width: 20px;
+            width: 80%;
           }
         }
       }
@@ -139,6 +153,7 @@ main {
   }
 
   .fourthSection {
+    margin-top: 7%;
     .all {
       width: 100%;
       .cards {
@@ -188,6 +203,28 @@ main {
     }
     100% {
       transform: translateX(200px);
+    }
+  }
+  .fifthSection {
+    margin-top: 7%;
+    .kandoo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      p {
+        position: absolute;
+        right: 20%;
+        font-size: clamp(10px, 2vw, 30px);
+      }
+      img {
+        &:first-of-type {
+          width: 33%;
+        }
+        &:last-of-type {
+          width: 50%;
+        }
+      }
     }
   }
 }
