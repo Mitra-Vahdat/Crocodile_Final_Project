@@ -189,11 +189,46 @@ main .fifthSection .kandoo {
 main .fifthSection .kandoo p {
   position: absolute;
   right: 20%;
-  font-size: clamp(10px, 2vw, 30px);
+  font-size: clamp(10px, 2vw, 50px);
 }
 main .fifthSection .kandoo img:first-of-type {
   width: 33%;
 }
 main .fifthSection .kandoo img:last-of-type {
   width: 50%;
+}
+
+footer {
+  background-color: #0c0b0b;
+  display: flex;
+  justify-content: center;
+  border-top: 15px solid #111111;
+}
+footer .container {
+  display: flex;
+  width: 70%;
+  align-items: center;
+}
+footer .container .allParts {
+  display: flex;
+  width: 65%;
+}
+footer .container .allParts .columns li {
+  list-style-type: none;
+}
+footer .container .allParts .columns li:first-of-type {
+  color: #6e6d6d;
+  font-size: clamp(20px, 4vw, 30px);
+  font-weight: 800;
+}
+footer .container .allParts .columns a {
+  color: #6e6d6d;
+  text-decoration: none;
+}
+footer .container .map {
+  width: 30%;
+}
+footer .container .map iframe {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=index-style.css.map */
